@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @font-face {
+            font-family: kbt;
+            src: url(./Fonts/kbtheendisbroken.ttf.ttf);
+        }
+        @font-face {
+            font-family: station;
+            src: url(./Fonts/ChelseaMarket-Regular.ttf);
+        }
+        @font-face {
+            font-family: milk;
+            src: url(./Fonts/Lemon-Milk-light/LemonMilklightitalic.otf);
+        }
+        *
+        {
+            padding:0px;
+            margin:0px;
+        }
+        .common
+        {
+            display:grid;
+            grid-template-columns: 2.5fr 1fr;
+            height: 100vh;
+            
+        }
+        .common1
+        {
+            background-color: rgb(255, 167, 183);
+            max-height:100vh;
+           
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             
+        }
+        .common2
+        {
+            padding-left:12%;
+            padding-top: 30px;
+        }
+        .common3
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .img
+        {
+            width:100%;
+            height:100vh;
+        }
+        .head1
+        {
+            font-family: station;
+            font-size:1.8rem;
+            color:white;
+            text-align: center;
+            font-weight: -500px;
+            letter-spacing: 3px;
+        }
+        .wave
+        {
+            width:170px;
+            height:20px;
+            
+            
+        }
+        .wave_common
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .name
+        {
+            color:white;
+            font-size:1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:-13px 0px 0px 0px;
+        
+        }
+        input[type="text"],input[type="password"]
+        {
+            
+            margin:-10px 0px 3px 0px;
+            padding:3px 10px 3px 13px;
+           
+            background-color: rgb(255, 167, 183);
+            border-radius: 10px;
+            border:1px solid white;
+            height:30px;
+            font-size:1.2rem;
+            width:80%;
+            color:white;
+            display:inline-block;
+            box-sizing: content-box;
+            outline:none;
+        }
+        input[type="text"]:focus,input[type="password"]:focus
+        {
+            
+            border:1px solid white;
+            outline:none;
+        }
+        .button
+        {
+            width:80%;
+            height:auto;
+            padding:7px 10px;
+            margin:10px 0px;
+            color: rgb(255, 167, 183);
+        
+            background-color:white;
+            font-size:1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            border:1px solid white;
+            outline:none;
+            display: inline-block;
+            box-sizing: content-box;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .button:hover
+        {
+            background-color: rgb(255, 167, 183);
+            color:white;
+            border:1px solid white;
+           
+            outline:none;
+        }
+        .img1
+        {
+            width:50px;
+        }
+        .img2
+        {
+            border:2px solid white;
+            padding:7px;
+            border-radius: 50%;
+            width:18px;
+            cursor:pointer;
+            margin:20px 5px;
+        }
+        .img3
+        {
+            border:2px solid white;
+            padding:6px;
+            border-radius: 50%;
+            width:21px;
+            cursor:pointer;
+           
+            margin:20px 5px;
+            transition: ease-out .1s;
+        }
+        .img3:hover,.img2:hover
+        {
+             background-color: rgb(255, 167, 183);
+          
+           
+            color-scheme:  black;
+            border-color:rgb(255, 167, 183);
+        }
+        .fab:hover
+        {
+          
+        }
+        .para
+        {
+            color:yellow;
+            font-size:1rem;
+            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="common">
+        <div>
+            <img src="./images/kid girl.jpg" class="img">
+        </div>
+        <div class="common1">
+            <h1 class="head1">SIGN UP</h1>
+            <div class="wave_common">
+            <img src="./images/wave1.png" class="wave"></div>
+            <div class="common2">
+                <div class="name">Username:</div><br><input type="text" name="name" id="name" oninput="demo()"><label id="info"></label><br>
+                <label id="info1"></label><br>
+                <div class="name">E-mail:</div><br><input type="text" id="email" name="name" oninput="demo1()"><label id="info2"></label><br>
+                <label id="info3"></label><br>
+                <div class="name">Password:</div><br><input type="password" name="password" id="password" oninput="demo2()"><label id="info4"></label><br>
+                <label id="info5"></label>
+                <button class="button">CREATE MY ACCOUNT</button>
+            </div>
+            <div class="common3">
+                <p class="para">Sign up with social platform</p>
+                <div class="common4">
+                <a href="#" class="fab"><img src="./images/facebook.png" id="common_img" class="img2"></a>
+                <a href="#" class="fab"><img src="./images/instagram.png" id="common_img"  class="img3"></a>
+                <a href="#" class="fab"><img src="./images/twitter.png" id="common_img"  class="img3"></a>
+                <a href="#" class="fab"><img src="./images/t.png" id="common_img"  class="img2"></a>
+            </div></div>
+        </div>
+    </div>
+
+    <script src="./signup.js"></script>
+</body>
+</html>
